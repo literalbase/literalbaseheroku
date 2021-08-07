@@ -1,0 +1,71 @@
+@import "../../global.scss";
+
+.blogspot{
+    @include mobile{
+        align-items: center;
+        justify-content: center;
+    }
+    background-color: white;
+    .Buttons{
+        justify-content: center;
+        margin-left: 25px; 
+    
+        
+        Button {
+            margin: 15px;
+            align-items: center;
+            background-color: yellow;
+            color: black;
+            
+        }
+
+    }
+    .avatar{
+              margin-left: 30px;
+              margin-top: 3px;
+              
+    }
+
+    Button{
+        background-color: #E1306C;
+        color: white;
+        margin: 15px;
+        font-size: 15px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .card{
+        display: flex;
+        margin-left: 100px;
+        margin-bottom: 10px;
+        align-items: center;
+        @include mobile{
+            align-items: center;
+            margin-left: 15px;
+        }
+      
+      img{
+          height:80px
+      }
+      h2{
+          margin: 3px;
+          font-size: 25px;
+          
+          @include mobile{
+            align-items: center;
+            font-size: 15px;
+            padding-left: 0;
+        }
+      }
+      Button{
+          background-color: rgb(112, 112, 76);
+          color: white;
+        a{
+            text-decoration: none;
+        }  
+      }
+    }
+} 
